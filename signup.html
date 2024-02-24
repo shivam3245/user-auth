@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="signupstyle.css">
+</head>
+
+<body>
+    <form action="submit_form.php" method="post">
+        <h2>Sign up</h2>
+        <label for="name">First Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="surname">Last Name:</label><br>
+        <input type="text" id="surname" name="surname" required><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" placeholder="Email" required
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"><br>
+
+        <label for="password">Create Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="password">Confirm Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
