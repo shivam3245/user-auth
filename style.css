@@ -26,6 +26,8 @@ body {
 }
 
 .social-login {
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
