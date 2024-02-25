@@ -28,6 +28,8 @@ body {
 .social-login {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -35,6 +37,8 @@ body {
     margin: 5px;
     position: relative;
     overflow: hidden;
+    height: 35px;
+    width: 120px;
 }
 
 .social-login button img {
@@ -47,7 +51,7 @@ body {
 
 .social-login button {
     height: 35px;
-    width: 50vh;
+    width: 300px;
 }
 
 .social-login {
@@ -70,7 +74,7 @@ input[type="password"] {
 }
 
 input[type="submit"] {
-    width: 100%;
+    width: 300px;
     padding: 10px;
     background-color: #007bff;
     color: #fff;
