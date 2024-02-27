@@ -1,5 +1,5 @@
 body {
-    background-image: url("bg1.jpg");
+    background-image: url("https://images.pexels.com/photos/1482777/pexels-photo-1482777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -25,17 +25,20 @@ h2 {
 
 label {
     font-weight: bold;
+
 }
 
 input[type="text"],
 input[type="number"],
 input[type="email"],
 input[type="password"] {
-    width: calc(100% - 10px);
-    margin: 5px;
-    padding: 10px;
+
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+    justify-content: center;
+    padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 1px;
 }
 
 input[type="submit"] {
