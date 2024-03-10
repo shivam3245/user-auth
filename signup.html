@@ -10,23 +10,23 @@
 
 <body>
     <div class="container">
-        <form id="signupForm" action="submit_form.php" method="post" onsubmit="return validateForm()">
+        <form id="signupForm" onsubmit="return validateForm()">
             <h2>Sign up</h2>
-            <label for="name">First Name:</label><br>
-            <input type="text" placeholder="Enter your name" id="name" name="name" required><br>
+            <label for="firstName">First Name:</label><br>
+            <input id="firstName" type="text" placeholder="Enter your name" id="name" name="name" required><br>
 
-            <label for="surname">Last Name:</label><br>
-            <input type="text" placeholder="Enter your surname" name="surname" required><br>
+            <label for="lastName">Last Name:</label><br>
+            <input id="lastName" type="text" placeholder="Enter your surname" name="surname" required><br>
 
             <label for="age">Age:</label><br>
-            <input type="number" placeholder="Enter your age" name="age" required><br>
+            <input id="age" type="number" placeholder="Enter your age" required><br>
 
             <label for="email">Email:</label><br>
-            <input type="email" name="email" placeholder="Enter your email" required><br>
+            <input id="email" type="email" name="email" placeholder="Enter your email" required><br>
 
             <label for="create_password">Create Password:</label><br>
-            <input type="password" id="create_password" placeholder="Enter your Password" name="create_password"
-                required><br>
+            <input id="create_password" type="password" id="create_password" placeholder="Enter your Password"
+                name="create_password" required><br>
 
             <label for="confirm_password">Confirm Password:</label><br>
             <input type="password" id="confirm_password" placeholder="Enter confirm password" name="confirm_password"
@@ -36,18 +36,8 @@
         </form>
         <div id="welcomeMessage" style="display: none;"></div>
     </div>
-    <script>
-        function validateForm() {
-            var createPassword = document.getElementById("create_password").value;
-            var confirmPassword = document.getElementById("confirm_password").value;
-
-            if (createPassword != confirmPassword) {
-                alert("Passwords do not match.");
-                return false;
-            }
-            return true;
-        }
-    </script>
+    <script src="passwordvalidate.js"></script>
+    <script src="SignupAPI.js"></script>
 </body>
 
 </html>
